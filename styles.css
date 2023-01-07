@@ -1,0 +1,154 @@
+:root {
+  --darkblue: #1B244A;
+  --black: #080001;
+  --red: #F94F6D;
+  --lightBlue: #9AABD8;
+  --gray: #EEEEEE;
+  --mainFont: Verdana, Geneva, Tahoma, sans-serif;
+  --numbFont: 'Urbanist', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--darkblue);
+}
+
+.container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.main-table {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.home {
+  width: 150px;
+}
+
+.home_text,
+.guest_text {
+  color: var(--gray);
+  font-family: var(--numbFont);
+  font-size: 40px;
+  line-height: 36px;
+
+}
+
+.home_num,
+.guest_num {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 150px;
+  height: 120px;
+  background-color: #000;
+  color: var(--red);
+  font-family: var(--numbFont);
+  align-items: center;
+  font-size: 50px;
+}
+
+.home_add-score,
+.guest_add-score {
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* gap: 8px; */
+  margin: 20px 0 0 0;
+}
+
+.home_add-score button,
+.guest_add-score button {
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  border: 1px solid var(--lightBlue);
+  color: var(--lightBlue);
+  font-family: var(--numbFont);
+  font-size: 20px;
+}
+
+.home_add-score button:hover,
+.guest_add-score button:hover {
+  background-color: var(--lightBlue);
+  color: var(--black);
+  transition: 0.2s;
+}
+
+.clear button {
+  width: 400px;
+  height: 45px;
+  background-color: var(--lightBlue);
+  border: 1px solid var(--gray);
+  color: var(--darkblue);
+  font-family: var(--numbFont);
+  font-size: 20px;
+}
+
+.clear button:hover {
+  background-color: transparent;
+  color: var(--lightBlue);
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 500px) {
+  .home {
+    width: 120px;
+  }
+
+  .main-table {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .home_text,
+  .guest_text {
+    font-size: 35px;
+  }
+
+  .home_num,
+  .guest_num {
+    width: 120px;
+    height: 90px;
+    font-size: 35px;
+  }
+
+  .home_add-score,
+  .guest_add-score {
+
+    width: 120px;
+    margin: 20px 0 0 0;
+  }
+
+  .home_add-score button,
+  .guest_add-score button {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid var(--lightBlue);
+    color: var(--lightBlue);
+    font-family: var(--numbFont);
+    font-size: 15px;
+  }
+
+  .clear button {
+    width: 300px;
+    height: 45px;
+    background-color: var(--lightBlue);
+    border: 1px solid var(--gray);
+    color: var(--darkblue);
+    font-family: var(--numbFont);
+    font-size: 20px;
+  }
+
+}
